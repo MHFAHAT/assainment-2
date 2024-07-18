@@ -112,6 +112,25 @@ main > section{
     background-color: black;
     
 } 
+.banner-btn{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    background: rgba(48, 48, 48, 0.54);
+    padding: 20px;
+    position: relative; 
+    top: -400px;
+    left: -130px;
+}
+.banner-bt{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    background: rgba(48, 48, 48, 0.54);
+    padding: 20px;
+    position: relative; 
+      top: -30px;
+    left: -550px;  
+
+}
 /* habit */
 .habit-card{
     max-width: 1300px;
@@ -152,5 +171,14 @@ main > section{
     }
     .banner-para{
         font-size:1rem ;
+    }
+    .banner-btn{  
+        top: -440px;
+        left: 200px;
+    }
+    .banner-bt{  
+          top: -110px;
+        left: -200px;  
+    
     }
 }
