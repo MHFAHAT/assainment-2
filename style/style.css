@@ -18,14 +18,13 @@
 }
 header{
     background: linear-gradient(100.00deg, rgba(17, 17, 17,1),rgba(119, 119, 119,15) 90%);
-    
+     max-width: 1500px;
+    margin: 0 auto;
 }
 main{
     margin: 20px;
 }
-body{
-    max-width: 1500px;
-    margin: 0 auto;
+body{ 
     background: rgb(0, 0, 0); 
 }
 .display{
@@ -55,6 +54,9 @@ body{
 .big3{
     color: rgba(255, 255, 255, 1);
     font-size: 1.25rem;
+}
+.big4{
+    font-size: 1.5rem;
 }
 main > section{
     margin-top: 130px;
@@ -184,8 +186,7 @@ main > section{
 /* run section */
 .run{
      color: rgba(255, 255, 255, 1);
-     display: flex;
-     /* width: 1060px;*/
+     display: flex; 
      height: 450px;  
      border-radius: 18px;
      background: rgb(34, 34, 34); 
@@ -225,32 +226,49 @@ main > section{
 .Bmi-parent{
     background: rgb(34, 34, 34);
     text-align: center;
-    justify-content: center; 
-    justify-content: space-between;
-     padding: 0 20px; 
-    
+    justify-content: center;  
+    max-width: 100%;
+    margin: 0 auto;
+    height: 440px;
+    gap: 170px;  
+    padding-top: 30px;
+    padding-bottom: 10px; 
 }
 .bmi-cal{ 
-    height: 386px; 
+    width: 577px;
+    height: 370px;   
+} 
+.bmi-tab{
+    height: 370px; 
 }
 td{
      padding: 20px;
      align-items: start;
 }
-
+.CAL{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.row{
+    grid-column: span 2/3; 
+}
 input{ 
     border-radius: 8px; 
     background: rgba(255, 255, 255, 0.1);
     border-color:  rgba(255, 255, 255, 0.1);
-    color:rgba(255, 255, 255, 0.6);
-    width: 282.5px;
-    height: 48px;
+    color:rgba(255, 255, 255, 0.6); 
     padding: 12px 40px 12px 20px;
     font-size: 1rem; 
 }
-.row ,.row1 ,.row2{
-    padding: 10px 0;
-}
+ .bmi-btn
+ {
+    width: 224px;
+    height: 54px;
+    margin-top: 15px;
+    font-size: 1.125rem ;
+    border-color: rgb(230, 83, 60);
+ }
 /* Team */
 .team{
     padding-bottom: 50px;
@@ -283,35 +301,35 @@ text-align: center;
 }
 .pic1{
     position: absolute;  
-    left: 12%;
-    top: 441%; 
+    left: 11%;
+    top: 444%; 
     
     
 } 
 .pic2{
     position: absolute;  
-    left: 41%;
-    top: 441%;   
+    left: 40%;
+    top: 444%;   
 } 
 .pic3{
     position: absolute;  
-    left: 69%;
-    top: 441%;   
+    left: 68%;
+    top: 444%;   
 } 
 .pic4{
     position: absolute;  
-    left: 12%;
-    top: 487%;   
+    left: 11%;
+    top: 488%;   
 } 
 .pic5{
     position: absolute;  
-    left: 41%;
-    top: 487%;   
+    left: 40%;
+    top: 488%;   
 } 
  .pic6{
     position: absolute;  
-    left: 69%;
-    top: 487%;   
+    left: 68.5%;
+    top: 489%;   
 } 
 /* footer */
   footer{
@@ -323,6 +341,10 @@ text-align: center;
    max-width: 1300px;
    margin: 0 auto;
     
+  }
+   .ul{
+    font-size:1rem ; 
+    color: rgba(255, 255, 255, 0.5);
   }
   .fot1{
     width: 443px;
@@ -360,7 +382,7 @@ text-align: center;
         
     } 
    
-     .banner,.run ,.last   {
+     .banner,.run ,.last ,.Bmi-parent   {
         flex-direction: column;
     }
     .navbar ,.banner-pic,.habit-card{ 
@@ -429,28 +451,28 @@ text-align: center;
    }
     
    .pic1{ 
-    left: 19%;
-    top: 707%;   
+    left: 22%;
+    top: 1659%;   
    } 
    .pic2{ 
-    left: 19%;
-    top: 757%;   
+    left: 22%;
+    top: 1769%;   
    } 
    .pic3{ 
-    left: 19%;
-    top: 805%;   
+    left: 22%;
+    top: 1875%;   
    } 
    .pic4{ 
-    left: 19%;
-    top: 854%;   
+    left: 22%;
+    top: 1984%;   
    } 
    .pic5{ 
-    left: 19%;
-    top: 903%;   
+    left: 22%;
+    top: 2092%;   
    } 
    .pic6{ 
-    left: 19%;
-    top: 952%;   
+    left: 22%;
+    top: 2202%;   
    } 
    footer{ 
     padding-left: 20px; 
@@ -459,4 +481,37 @@ text-align: center;
    .last{
     gap: 0px;
    }
+   input{
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    gap: 0px;
+     
+   }
+   .row{
+    width: 325px;
+     height: 23px; 
+   }
+   .Bmi-parent{
+    width: 394px;
+    height: 772px;
+    padding-left: 20px;
+    gap: 5px; 
+   }
+   td{
+     padding: 15px;
+
+   } 
+   .bmi-cal{
+    width: 260px;
+    
+   }
+   .bmi-btn{
+    width: 224px;
+    height: 54px;
+   }
+   .txt{
+    color: rgba(255, 255, 255, 0.5);
+   }
+   
 }
