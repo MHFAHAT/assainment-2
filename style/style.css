@@ -52,6 +52,10 @@ body{
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
 }
+.big3{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+}
 main > section{
     margin-top: 130px;
 }
@@ -140,20 +144,23 @@ main > section{
     border-radius: 12px; 
     background: rgba(48, 48, 48, 0.54); 
     width: 206px;
-    height: 96px; 
+    height: 96px;
+    padding-left: 50px; 
+    padding-right: 23px;
     position: absolute;  
     top: 80%;
     left: -25%;
 
 }
-.red{
-    display: block;
-}
+ 
 .circle{
     background-color: tomato;
     width: 40px;
     height: 40px;
+    position: absolute;
     border-radius:100%;
+    top: 82%;
+    right: 110%;
     
 }
 /* habit */
@@ -208,9 +215,7 @@ main > section{
 .run-pic{
     width: 366px;
     height: 312px;
-    border-radius: 18px;
-    /* object-fit: none;
-    object-position: 65% 30% ; */
+    border-radius: 18px; 
   
 }
 .ran1{
@@ -220,9 +225,7 @@ main > section{
 .Bmi-parent{
     background: rgb(34, 34, 34);
     text-align: center;
-    justify-content: center;
-    /* width:100%;
-    height: 487px;  */
+    justify-content: center; 
     justify-content: space-between;
      padding: 0 20px; 
     
@@ -249,6 +252,9 @@ input{
     padding: 10px 0;
 }
 /* Team */
+.team{
+    padding-bottom: 50px;
+}
 .team-title{
     text-align: center;
     padding-bottom: 50px;
@@ -257,18 +263,19 @@ input{
 margin: 20px 0px;
 border-radius: 18px;
 display: grid;
-grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(3,1fr); 
 max-width: 1300px;
 margin: 0 auto;
 background: rgba(255, 255, 255, 0.1);
 text-align: center; 
 }
- 
+  
 .pic{
-    width: 313px;
+    width: 340px;
     height: 272px;
-    padding: 20px 0;
-    border-radius: 18px; 
+    padding: 20px ;
+    border-radius: 18px;
+    
 }
  .pic-1,.pic-2,.pic-3,.pic-4,.pic-5,.pic-6{
     position: relative;
@@ -277,7 +284,9 @@ text-align: center;
 .pic1{
     position: absolute;  
     left: 12%;
-    top: 441%;   
+    top: 441%; 
+    
+    
 } 
 .pic2{
     position: absolute;  
@@ -304,16 +313,42 @@ text-align: center;
     left: 69%;
     top: 487%;   
 } 
+/* footer */
+  footer{
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center; 
+   height: 100%; 
+   width: 100%;
+   justify-content: space-around;
+   max-width: 1300px;
+   margin: 0 auto;
+    
+  }
+  .fot1{
+    width: 443px;
+    height: 176px;
+    gap: 20;   
+  }
   
- 
+ .last{
+    max-width: 1300px;
+   margin: 0 auto;
+   display: flex; 
+   border-bottom: 2px solid rgba(255, 255, 255, 0.6) ;
+  justify-content: center;
+   gap : 40px;
+ }
+ .cpy{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5)
+ }
 /* media query */
 @media screen and (max-width: 576px) 
 {   .banner-content{
     padding: 20px;
 }
       .navbarlink{ 
-        display: none;
-         
+        display: none; 
     }
     .burger , .habit-card {
         display: block;
@@ -321,10 +356,11 @@ text-align: center;
     .navbar {
         font-size: 2.25rem;
         text-align: left;
-        display: flex; 
+        padding: 20px;
+        
     } 
    
-    .navbar, .banner,.run{
+     .banner,.run ,.last   {
         flex-direction: column;
     }
     .navbar ,.banner-pic,.habit-card{ 
@@ -346,6 +382,10 @@ text-align: center;
         top: 40%;
         width: 155.74px;
          height: 72.58px;
+    }
+    .circle{
+        top: 40%;
+        left: 12%;
     }
     .big1{
         font-size: 30.24px;
@@ -380,14 +420,17 @@ text-align: center;
         height: 76px; 
         padding-left: 10px;
     }
+    
    .img{
     width: 353px;
     height:1970px;
     grid-template-columns: repeat(1,1fr);
+    padding-right: 25px;
    }
+    
    .pic1{ 
     left: 19%;
-    top: 710%;   
+    top: 707%;   
    } 
    .pic2{ 
     left: 19%;
@@ -395,19 +438,25 @@ text-align: center;
    } 
    .pic3{ 
     left: 19%;
-    top: 807%;   
+    top: 805%;   
    } 
    .pic4{ 
     left: 19%;
-    top: 856%;   
+    top: 854%;   
    } 
    .pic5{ 
     left: 19%;
-    top: 905%;   
+    top: 903%;   
    } 
    .pic6{ 
     left: 19%;
-    top: 953%;   
+    top: 952%;   
    } 
-
+   footer{ 
+    padding-left: 20px; 
+    width: 100%;  
+   }   
+   .last{
+    gap: 0px;
+   }
 }
